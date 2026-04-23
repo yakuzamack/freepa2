@@ -1,0 +1,390 @@
+/* Header */
+
+.header-navs, .sub-navs {
+    height: 6em;
+}
+
+/* Navigation */
+
+.slider-navigation {
+	font-size: 0;
+}
+
+.slider-navigation-entry-label {
+    font-size: 13px;
+}
+
+/* Content */
+
+main.content {
+	padding-bottom: 8em;
+}
+
+
+
+/* Slider */
+
+main.content .content-part.slider-part {
+	background-color: #fff;
+}
+
+main.content .content-part.slider-part {
+	padding-top: 36px;
+	padding-bottom: 16px;
+}
+
+@media all and (max-width: 33.125em) {
+	main.content .content-part.slider-part {
+		padding-top: 18px;
+		padding-bottom: 16px;
+	}
+}
+
+main.content .content-part.payment-title {
+	padding: 7em 2em 1px;
+}
+
+main.content .content-part.payment-content {
+	padding: 1px 2em 7em;
+}
+
+/* Table */
+
+table.noMarginBottom {
+    margin-bottom: 0;
+}
+
+.td-left label,
+.td-right label {
+    height: 100%;
+}
+
+table tbody tr.payment-background-white {
+	background-color: #fff;
+}
+
+/* Order Preview */
+
+.order-preview {
+	margin-top: 2em;
+}
+
+@media all and (max-width: 33.125em) {
+	.order-preview {
+		margin-top: 2em 0;
+	}
+}
+
+.order-preview table,
+.order-preview table td {
+	word-break: normal;
+}
+
+@media all and (max-width: 33.125em) {
+	.order-preview table,
+	.order-preview table tr,
+	.order-preview table td {
+		display: grid;
+	}
+	
+	.order-preview table tr {
+		padding: 0.5em 0;
+	}
+	
+	.order-preview table td {
+		height: auto;
+	}
+	
+	.order-preview table td,
+	.order-preview td:first-child {
+		display: block;
+		padding: 0 1em !important;
+	}
+}
+
+.order-preview .td-left {
+    width: 50%;
+}
+
+.order-preview .td-right {
+    width: 50%;
+}
+
+.order-preview-total {
+	background-color: #2f3033 !important;
+	color: #fff;
+}
+
+@media all and (max-width: 768px) {
+    .order-preview strong {
+        word-break: break-word !important;
+        font-size:11px !important;
+        line-height: 18px !important;
+        letter-spacing: 0px !important;
+    }
+}
+
+/* Typography */
+
+@media all and (max-width: 768px) {
+    p {
+        margin: 0.5em !important;
+    }
+}
+
+/* Radiobuttons */
+
+.radio-styled + label,
+.radio-styled:checked + label {
+    background: no-repeat scroll 20px center rgba(0, 0, 0, 0);
+	background-size: 25px 25px;
+    display: inline-block;
+	line-height: 1em;
+    padding-left: 55px;
+	padding-right: 10px;
+    height: 40px;
+}
+
+@media all and (max-width: 33.125em) {
+	.radio-styled + label,
+	.radio-styled:checked + label {
+		background: no-repeat scroll 0 center rgba(0, 0, 0, 0);
+		background-size: 25px 25px;
+    	padding-left: 40px;
+	}
+}
+
+.radio-styled + label {
+}
+
+
+
+table.payment-table input[type="radio"].radio-styled {
+    height: 0;
+    border: 0 none !important;
+    display: block;
+}
+
+/* Radiobutton Logos */
+
+.radio-styled + label .card-logo {
+    height: 40px;
+	width: 60px;
+    display: inline-block;
+}
+
+.radio-styled + label .card-logo svg {
+	height: 40px;
+}
+
+/* Checkboxes */
+
+.order-vserver-checkbox {
+    float: left;
+	margin: 5px 0;
+	height: 40px;
+    width: auto;
+}
+
+@media all and (max-width: 768px) {
+	.order-vserver-checkbox {
+		float: none;
+		margin: 10px 0;
+	}
+}
+
+label img {
+    vertical-align: middle;
+}
+
+@media all and (max-width: 768px) {
+    label img {
+        height: 25px !important;
+        width: auto;
+    }
+}
+
+.float-left {
+    float: left;
+}
+
+.vat {
+    color: gray;
+    white-space: pre;
+}
+
+.js-text_input_row_narrow.text_input_row_narrow.l-gap-above.l-gap-small {
+    width: 60%;
+}
+@media only screen and (max-width: 480px) {
+    .js-text_input_row_narrow.text_input_row_narrow.l-gap-above.l-gap-small {
+        width: 100%;
+    }
+    div.cardImage#cardImageBack {
+        background-size: 80%;
+        background-repeat: no-repeat;
+    }
+}
+
+/* Form Fields */
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+textarea {
+	display: block;
+	width: 100%;
+}
+
+select,
+.order-wrap label.error {
+    width: 100% !important;
+}
+
+@media all and (max-width: 33.125em) {
+	input[type="email"],
+	input[type="password"],
+	input[type="text"],
+	textarea,
+	select {
+		margin: 0.5em 0;
+	}
+	
+	.order-wrap label.error {
+		margin: -0.5em 0 0.5em;
+	}
+}
+
+/* Buttons */
+
+.order-buttons {
+	margin-top: 2em;
+	text-align: right;
+}
+
+.order-buttons::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+button.button,
+a.button {
+	position: static !important;
+	width: auto;
+	height: auto;
+    background: #ebedf2 !important;
+	color: #2f3033 !important;
+    font-size: 1em;
+    min-width: 160px;
+	float: none;
+	padding: 1em 3em;
+	height: 40px;
+	line-height: 15px;
+}
+
+button.button:hover,
+a.button:hover {
+	background: #dcdfe8 !important;
+	color: #2f3033 !important;
+}
+
+button.button.clicked,
+a.button.order,
+.button.order.right.no-page-transition {
+	cursor: pointer;
+    background: #2f3033 !important;
+	color: #fff !important;
+}
+
+button.button.clicked:hover,
+a.button.order:hover,
+.button.order.right.no-page-transition {
+	background: #171718 !important;
+	color: #fff !important;
+}
+
+.order-buttons button.button,
+.order-buttons a.button {
+	margin-left: 5px;
+}
+
+@media all and (max-width: 33.125em) {
+	.order-client-buttons button.button,
+	.order-client-buttons a.button,
+	.order-buttons button.button,
+	.order-buttons a.button {
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: 10px;
+	}
+}
+
+/* iFrame */
+
+.payment-iframe-title {
+	margin-bottom: 0;
+	padding-bottom: 20px;
+	padding-left: 2.5em;
+	background-color: #fff;
+}
+
+#iframe-payment,
+#iframe-postcard {
+	overflow: hidden;
+	border: none;
+	width: 100%;
+}
+#iframe-payment {
+	height: 540px;
+	padding: 0 1em;
+	background-color: #fff;
+}
+
+#iframe-postcard {
+	height: 640px !important;
+}
+
+
+@media only screen and (max-width: 1015px) {
+	#iframe-postcard {
+		height: 900px !important;
+	}
+}
+
+/* Error Message */
+
+.message {
+	padding: 20px !important;
+	margin-bottom: 40px !important;
+}
+
+.message .message-text {
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 15px;
+	bottom: 0;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 0 0 25px !important;
+	height: 100%;
+	line-height: 22px;
+	word-break: break-word;
+}
+
+.message .message-icon {
+    display: table-cell;
+	float: none;
+    vertical-align: middle;
+    width: 45px;
+}
+
+.message .message-icon .svg,
+.message .message-icon .svg img {
+	height: 45px;
+	width: 45px;
+}
+nav.main-nav a.logo-link {
+    margin-top: 1em;
+}
